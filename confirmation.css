@@ -1,0 +1,134 @@
+.homeImage{
+   min-height: 130vh;
+   width: 100%;
+}
+
+.confirmation {
+    width: 1200px;
+    margin-left: 150px;
+    margin-top: 80px;
+    font-size: 20pt;
+    font-style: italic;
+    color: #00a6e0; 
+    letter-spacing: 7px;
+    text-shadow:
+      0 0 20px #0074a8,
+      0 0 40px #0074a8,
+      0 0 60px #005377;
+    animation: flicker 6s infinite;
+  }
+  
+  @keyframes flicker {
+    15%,
+    20%,
+    50% {
+      color: #05668d; 
+      text-shadow: none;
+    }
+    
+    0%,
+    14%,
+    16%,
+    19%,
+    26%,
+    49%,
+    51%,
+    100% {
+      text-shadow:
+        0 0 20px #0074a8,
+        0 0 40px #0074a8,
+        0 0 60px #005377;
+      color: #00a6e0; /* Marine blue color */
+    }
+  }
+
+#summaryTable{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    width: 880px;
+  }
+
+/* Media querries for Samsung galaxy S8+*/
+@media (max-width:361px){
+
+  .homeImage{
+    min-height: 112vh;
+ }
+
+  .confirmation{
+    font-size: 12pt;
+    width: 300px;
+    margin-left: 30px;
+    text-align: justify;
+  }
+
+  #summaryTable{
+    top: 52%;
+    left: 5%;
+    width: 310px;
+  }
+}
+
+/* Media querries for Iphone XR*/
+@media (max-width:415px) and (min-width:362px){
+
+  .homeImage{
+    min-height: 93vh;
+ }
+
+  .confirmation{
+    font-size: 13pt;
+    width: 350px;
+    margin-left: 30px;
+    text-align: justify;
+  }
+
+  #summaryTable{
+    top: 52%;
+    left: 5%;
+    width: 350px;
+  }
+}
+
+/* Media querries for Ipad air*/
+@media (max-width:821px) and (min-width:416px){
+
+  .homeImage{
+    min-height: 90vh;
+ }
+
+  .confirmation{
+    font-size: 20pt;
+    width: 700px;
+    margin-left: 50px;
+    text-align: justify;
+  }
+
+  #summaryTable{
+    top: 45%;
+    left: 5%;
+    width: 700px;
+  }
+}
+
+/* Media querries for Nest Hub*/
+@media (max-width:1025px) and (min-width:822px){
+
+  .homeImage{
+    min-height: 165vh;
+ }
+
+  .confirmation{
+    font-size: 20pt;
+    width: 900px;
+    margin-left: 50px;
+    text-align: justify;
+  }
+
+  #summaryTable{
+    top: 46%;
+    left: 4%;
+    width: 900px;
+  }
+}

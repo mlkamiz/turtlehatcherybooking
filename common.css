@@ -1,0 +1,366 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 60, 74);
+    transition: 0.3s;
+  }
+  
+  .logo a{
+    display: block;
+  }
+  
+  .logo a img{
+    display: block;
+    width: 50%;
+  }
+  
+  .menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+  .menu li{
+    list-style-type: none;
+  }
+  
+  .menu li.active a{
+    box-shadow: 0 -5px 0px #fff inset;
+    color: 500px 0 0 rgba(255,255,255,0.03) inset;
+    padding: 35px 25px 45px 25px;
+  }
+  
+  .menu li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0px 5px;
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.3s;
+  }
+  
+  .menu li a:hover{
+    box-shadow: 0 -5px 0px #fff inset;
+    color: 500px 0 0 rgba(255,255,255,0.03) inset;
+    padding: 35px 25px 45px 25px;
+  }
+
+  .homeImage{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(mynewbg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .bookingHead h1{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: #61aa95;
+  }
+  
+  .bookingHead p{
+    color: #437c6c;
+    width: 320px;
+  }
+
+  .payment {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   .payment:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    border-radius: 30%;
+   }
+   
+   .payment:hover {
+    color: #fff;
+   }
+   
+   .payment:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .payment:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .payment:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+   #summaryTable th, td{
+    color: whitesmoke;
+    background-color: #222831;
+    font-size: 17pt;
+    text-align: center;
+  }
+
+  .tabhd{
+    background-color: #30475e;
+  }
+
+  footer {
+    background-color: black;
+    padding: 20px 0;
+    color: #fff;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column p {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-links img{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+
+  /* Media querries for Samsun galaxy S8+*/
+  @media (max-width:361px){
+
+    .logo a img{
+      width: 30%;
+    }
+
+    .bookingHead h1{
+      position: absolute;
+      top: 40%;
+      left: 22%;
+      font-size: 15pt;
+    }
+
+    .bookingHead p{
+      font-size: 8pt;
+      width: 150px;
+      text-align: justify;
+    }
+
+    .menu li a{
+      font-size: 12pt;
+    }
+
+    #summaryTable th, td{
+      font-size: 10pt;
+    }
+
+    .footer-column h3 {
+      font-size: 12pt;
+    }
+
+    .footer-column p {
+      font-size: 8pt;
+    }
+
+    .social-links img{
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  /* Media querries for Iphpne XR*/
+  @media (max-width:415px) and (min-width:362px){
+
+    .logo a img{
+      width: 30%;
+    }
+  
+    .bookingHead h1{
+      position: absolute;
+      top: 40%;
+      left: 22%;
+      font-size: 15pt;
+    }
+  
+    .bookingHead p{
+      font-size: 8pt;
+      width: 150px;
+      text-align: justify;
+    }
+  
+    .menu li a{
+      font-size: 11pt;
+    }
+  
+    #summaryTable th, td{
+      font-size: 11pt;
+    }
+  
+    .footer-column h3 {
+      font-size: 12pt;
+    }
+  
+    .footer-column p {
+      font-size: 8pt;
+    }
+  
+    .social-links img{
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  /* Media querries for Ipad air*/
+  @media (max-width:821px) and (min-width:416px){
+
+   .logo a img{
+      width: 50%;
+    }
+
+   .bookingHead h1{
+      position: absolute;
+      top: 30%;
+      left: 35%;
+      font-size: 30pt;
+    }
+
+    .bookingHead p{
+      font-size: 12pt;
+      width: 200px;
+      text-align: justify;
+    }
+
+    .menu li a{
+      font-size: 17pt;
+    }
+
+    #summaryTable th, td{
+      font-size: 18pt;
+    }
+
+    .footer-column h3 {
+      font-size: 16pt;
+    }
+
+    .footer-column p {
+      font-size: 14pt;
+    }
+
+    .social-links img{
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  /* Media querries for Nest Hub*/
+  @media (max-width:1025px) and (min-width:822px) {
+
+    .logo a img{
+      width: 60%;
+    }
+  
+    .bookingHead h1{
+      position: absolute;
+      top: 40%;
+      left: 32%;
+      font-size: 25pt;
+    }
+  
+    .bookingHead p{
+      font-size: 17pt;
+      width: 300px;
+      text-align: justify;
+    }
+  
+    .menu li a{
+      font-size: 23pt;
+    }
+  
+    #summaryTable th, td{
+      font-size: 18pt;
+    }
+  
+    .footer-column h3 {
+      font-size: 12pt;
+    }
+  
+    .footer-column p {
+      font-size: 8pt;
+    }
+  
+    .social-links img{
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+
+
+  

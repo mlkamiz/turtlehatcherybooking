@@ -1,0 +1,257 @@
+.homeImage{
+  min-height: 130vh;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  position: absolute;
+  left: 15%;
+}
+
+.container form{
+  padding:20px;
+  width:500px;
+  color: whitesmoke;
+  background-color: #222831;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color: #ccc;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 80%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  background-color: #30475e;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+#summaryTable{
+  position: absolute;
+  top: 35%;
+  left: 54%;
+  width: 580px;
+}
+
+.payment {
+  width: 540px;
+  position: absolute;
+  top: 85%;
+  left: 15.5%;
+}
+
+.payment:before {
+  width: 790px;
+}
+
+input.invalid {
+  border: 1px solid red;
+}
+
+/* Media querries for Samsung galaxy S8+*/
+@media (max-width:361px){
+
+  .homeImage{
+    min-height: 155vh;
+  }
+
+  .container{
+    width:  290px;
+    top: 5%;
+    left: 4%;
+  }
+
+  .container form .row .col .title{
+    font-size: 12pt;
+  }
+
+  .container form .row .col .inputBox span{
+    font-size: 10pt;
+  }
+
+  .container form .row .col .inputBox input{
+    font-size: 10pt;
+  }
+
+  .payment{
+    top: 56%;
+    left: 5%;
+    width: 290px;
+  }
+
+  #summaryTable{
+    top: 62%;
+    left: 12%;
+    width: 280px;
+  }
+}
+
+/* Media querries for Iphone XR*/
+@media (max-width:415px) and (min-width:362px){
+
+  .homeImage{
+    min-height: 135vh;
+  }
+
+  .container{
+    width:  335px;
+    top: 1%;
+    left: 4%;
+  }
+
+  .container form .row .col .title{
+    font-size: 13pt;
+  }
+
+  .container form .row .col .inputBox span{
+    font-size: 11pt;
+  }
+
+  .container form .row .col .inputBox input{
+    font-size: 11pt;
+  }
+
+  .payment{
+    top: 58%;
+    left: 5%;
+    width: 340px;
+  }
+
+  #summaryTable{
+    top: 64%;
+    left: 11%;
+    width: 335px;
+  }
+}
+
+/* Media querries for Ipad air*/
+@media (max-width:821px) and (min-width:416px){
+
+  .homeImage{
+    min-height: 135vh;
+  }
+
+  .container{
+    top: 1%;
+    left: 4%;
+  }
+
+  .container form{
+    width:  650px;
+  }
+
+  .container form .row .col .title{
+    font-size: 20pt;
+  }
+
+  .container form .row .col .inputBox span{
+    font-size: 18pt;
+  }
+
+  .container form .row .col .inputBox input{
+    font-size: 18pt;
+  }
+
+  .payment{
+    top: 58%;
+    left: 5%;
+    width: 690px;
+  }
+
+  #summaryTable{
+    top: 63%;
+    left: 7%;
+    width: 690px;
+  }
+}
+
+/* Media querries for Nest Hub*/
+@media (max-width:1025px) and (min-width:822px){
+
+  .homeImage{
+    min-height: 255vh;
+  }
+
+  .container{
+    top: 20%;
+    left: 15%;
+  }
+
+  .container form{
+    width:  650px;
+  }
+
+  .container form .row .col .title{
+    font-size: 20pt;
+  }
+
+  .container form .row .col .inputBox span{
+    font-size: 18pt;
+  }
+
+  .container form .row .col .inputBox input{
+    font-size: 18pt;
+  }
+
+  .payment{
+    top: 58%;
+    left: 15.5%;
+    width: 690px;
+  }
+
+  #summaryTable{
+    top: 63%;
+    left: 17%;
+    width: 690px;
+  }
+}

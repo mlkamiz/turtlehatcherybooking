@@ -1,0 +1,500 @@
+.homeImage{
+  min-height: 270vh;
+  width: 100%;
+}
+
+.calendarContainer{
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 190px;
+}
+
+.calendarContainer h1{
+  color: #fff;
+  padding-left: 50px;
+}
+
+.calendar{
+  border: 1px solid #4382ab;
+  color: whitesmoke;
+  background-color: #222831;
+  padding: 10px;
+}
+
+.calendarHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.arrow{
+  cursor: pointer;
+}
+
+.calendarDays, .calendarDates{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day{
+  text-align: center;
+  padding: 5px;
+}
+
+.calendarDates{
+  grid-gap: 2px;
+}
+
+.calendarDates .date{
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.calendarDates .date:hover{
+  color: whitesmoke;
+  background-color: #222831;
+}
+
+#dateInput{
+  width: 509px;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 20pt;
+  text-align: center;
+}
+
+.selected{
+  background-color: #30475e;
+}
+
+
+.ticketForm{
+  max-width: 482px;
+  margin: 10px 190px;
+  color: whitesmoke;
+  background-color: #222831;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ticketForm h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ticketCategory{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ticketCategory label{
+  flex: 1;
+}
+
+.ticketCategory input{
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin: 10px 0 15px 0;
+  background-color: #30475e;
+  font-size: 12pt;
+}
+
+.priceDetTbl {
+  font-size: 17pt;
+  border: 1px solid black;
+  max-width: 520px; 
+  margin-left: 190px; 
+  text-align: center;
+}
+
+.priceDetTbl th, td{
+  border: 1px solid #222831;
+  color: whitesmoke;
+  background-color: #222831;
+}
+
+#timeSlots{
+  font-size: 14pt;
+}
+
+.duration{
+  width: 520px;
+  position: absolute;
+  left: 13%;
+  color: whitesmoke;
+  background-color: #222831;
+  font-size: 18pt;
+  text-align: center;
+}
+
+#selectedSlots{
+  width: 300px;
+  margin-left: 0px;
+}
+
+.warning{
+  color: red;
+}
+
+.payment {
+  width: 750px;
+  position: absolute;
+  top: 256%;
+  left: 25%;
+}
+
+.payment:before {
+  width: 790px;
+}
+
+#summaryTable{
+  position: absolute;
+  top: 15.1%;
+  left: 55%;
+  width: 600px;
+}
+
+/* Media querries for Samsung galaxy S8+*/
+@media (max-width:361px){
+  .homeImage{
+    min-height: 265vh;
+  } 
+
+  .calendarContainer h1{
+    font-size: 12pt;
+    padding-left: 30px;
+  }
+
+  .calendarContainer{
+    width: 263px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  #dateInput{
+    width: 250px;
+    font-size: 10pt;
+  }
+  
+  .ticketForm h1{
+    font-size: 12pt;
+    margin-left: 10px;
+  }
+
+  .ticketForm{
+    max-width: 632px;
+    margin: 10px 50px;
+  }
+
+  label{
+    font-size: 10pt;
+  }
+
+  .priceDetTbl {
+    max-width: 263px; 
+    margin-left: 50px; 
+  }
+
+  .priceDetTbl p{
+    font-size: 12pt;
+  }
+
+  .duration h1{
+    font-size: 12pt;
+  }
+
+  .duration{
+    width: 263px;
+    position: absolute;
+    left: 13%;
+    font-size: 10pt;
+  }
+
+  #selectedSlots{
+    width: 190px;
+  }
+
+  #timeSlots{
+    font-size: 10pt;
+    height: 180px;
+  }
+
+  .warning{
+    font-size: 10pt;
+  }
+
+  .payment {
+    width: 300px;
+    position: absolute;
+    top: 227.5%;
+    left: 3%;
+  }
+
+  #summaryTable{
+    top: 90%;
+    left: 14%;
+    width: 263px;
+  }
+}
+
+/* Media querries for Iphone XR*/
+@media (max-width:415px) and (min-width:362px){
+  .homeImage{
+    min-height: 230vh;
+  } 
+
+  .calendarContainer h1{
+    font-size: 13pt;
+    padding-left: 30px;
+  }
+
+  .calendarContainer{
+    width: 315px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  #dateInput{
+    width: 302px;
+    font-size: 11pt;
+  }
+  
+  .ticketForm h1{
+    font-size: 13pt;
+    margin-left: 10px;
+  }
+
+  .ticketForm{
+    max-width: 632px;
+    margin: 10px 50px;
+  }
+
+  label{
+    font-size: 11pt;
+  }
+
+  .priceDetTbl {
+    max-width: 315px; 
+    margin-left: 50px; 
+  }
+
+  .priceDetTbl p{
+    font-size: 13pt;
+  }
+
+  .duration h1{
+    font-size: 13pt;
+  }
+
+  .duration{
+    width: 315px;
+    position: absolute;
+    left: 13%;
+    font-size: 18pt;
+  }
+
+  #selectedSlots{
+    width: 190px;
+  }
+
+  #timeSlots{
+    font-size: 11pt;
+    height: 195px;
+  }
+
+  .warning{
+    font-size: 11pt;
+  }
+
+  .payment {
+    width: 300px;
+    position: absolute;
+    top: 195%;
+    left: 9%;
+  }
+
+  #summaryTable{
+    top: 90%;
+    left: 14%;
+    width: 315px;
+  }
+}
+
+/* Media querries for Ipad air*/
+@media (max-width:821px) and (min-width:416px){
+  .homeImage{
+    min-height: 195vh;
+  } 
+
+  .calendarContainer h1{
+    font-size: 20pt;
+    padding-left: 180px;
+  }
+
+  .calendarContainer{
+    width: 715px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  #dateInput{
+    width: 702px;
+    font-size: 18pt;
+  }
+  
+  .ticketForm h1{
+    font-size: 20pt;
+    margin-left: 10px;
+  }
+
+  .ticketForm{
+    max-width: 702px;
+    margin: 10px 50px;
+  }
+
+  label{
+    font-size: 18pt;
+  }
+
+  .priceDetTbl {
+    max-width: 715px; 
+    margin-left: 50px; 
+  }
+
+  .priceDetTbl p{
+    font-size: 20pt;
+  }
+
+  .duration h1{
+    font-size: 20pt;
+  }
+
+  .duration{
+    width: 715px;
+    position: absolute;
+    left: 6%;
+    font-size: 18pt;
+  }
+
+  #selectedSlots{
+    width: 590px;
+    font-size: 17pt;
+  }
+
+  #timeSlots{
+    font-size: 17pt;
+    width: 590px;
+    height: 300px;
+  }
+
+  .warning{
+    font-size: 15pt;
+  }
+
+  .payment {
+    width: 715px;
+    position: absolute;
+    top: 160%;
+    left: 4%;
+  }
+
+  #summaryTable{
+    top: 86%;
+    left: 6%;
+    width: 715px;
+  }
+}
+
+/* Media querries for Nest Hub*/
+@media (max-width:1025px) and (min-width:822px){
+  .homeImage{
+    min-height: 375vh;
+  } 
+
+  .calendarContainer h1{
+    font-size: 20pt;
+    padding-left: 180px;
+  }
+
+  .calendarContainer{
+    width: 450px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  #dateInput{
+    width: 438px;
+    font-size: 18pt;
+  }
+  
+  .ticketForm h1{
+    font-size: 20pt;
+    margin-left: 10px;
+  }
+
+  .ticketForm{
+    max-width: 405px;
+    margin: 10px 50px;
+  }
+
+  label{
+    font-size: 18pt;
+  }
+
+  .priceDetTbl {
+    max-width: 450px; 
+    margin-left: 50px; 
+  }
+
+  .priceDetTbl p{
+    font-size: 20pt;
+  }
+
+  .duration h1{
+    font-size: 20pt;
+  }
+
+  .duration{
+    width: 450px;
+    position: absolute;
+    left: 6%;
+    font-size: 18pt;
+  }
+
+  #selectedSlots{
+    width: 400px;
+    font-size: 17pt;
+  }
+
+  #timeSlots{
+    font-size: 17pt;
+    width: 380px;
+    height: 300px;
+  }
+
+  .warning{
+    font-size: 15pt;
+  }
+
+  .payment {
+    width: 715px;
+    position: absolute;
+    top: 355%;
+    left: 19%;
+  }
+
+  #summaryTable{
+    top: 15.5%;
+    left: 50%;
+    width: 450px;
+  }
+}

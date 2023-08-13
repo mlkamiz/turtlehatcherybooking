@@ -1,0 +1,406 @@
+.homeImage{
+    min-height: 120vh;
+    width: 100%;
+}
+
+.container{
+    max-width: 600px;
+    width: 100%;
+    color: whitesmoke;
+    background-color: #222831;  
+    position: absolute;
+    top: 28%;
+    left: 12%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.container .title{
+    font-size: 20pt;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 70px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.content form, .userDetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .userDetails .inputBox{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+form .inputBox span .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;  
+}
+
+.userDetails .inputBox input{
+   width: 100%;
+   padding: 10px;
+   border: none;
+   border-radius: 15px;
+   box-sizing: border-box;
+   margin: 10px 0 15px 0;
+   background-color: #30475e;
+} 
+
+
+.userDetails .inputBox input:focus, .userDetails .inputBox input:valid{
+    border-color: #9b59b6;
+} 
+
+.selectBox {
+    position: relative;
+    padding: -500px;
+    width: 416px;
+}
+
+.selectBox input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 15px 0;
+    background-color: #30475e;
+}
+
+input[type="tel"] {
+    border-radius: 0 8px 8px 0;
+}
+
+.selectBox input:focus {
+    border: 1.6px solid var(--primary);
+}
+
+.selectedOption {
+    color: whitesmoke;
+    background-color: #222831;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectedOption div{
+    position: relative;
+    width: 95px;
+    padding: 0 44px 0 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selectedOption div::after{
+    position: absolute;
+    content: "";
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);  
+    width: 13px;
+    height: 13px;
+    border-right: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    transition: .2s;
+}
+
+.selectedOption div.active::after{
+    transform: translateY(-50%) rotate(225deg);
+}
+
+.selectBox .options {
+    position: absolute;
+    top: 64px;  
+    width: 100%;
+    color: whitesmoke;
+    background-color: #222831;
+    border-radius: 8px;
+    display: none;
+}
+
+.selectBox .options.active {
+    display: block;
+}
+
+.selectBox .options::before {
+    position: absolute;
+    content: "";
+    left: 16px;
+    top: -19.2px;
+    width: 0;
+    height: 0;
+    border: 9.6px solid transparent;
+    border-bottom: 2px solid whitesmoke;
+}
+
+input.searchBox {
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    padding: 22.5px 16px;
+}
+
+.selectBox ol {
+    list-style: none;
+    max-height: 140px;
+    overflow: overlay;
+}
+
+.selectbox ol::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+.selectBox ol::-webkit-scrollbar-thumb {
+    width: 9.6px;
+    height:48px;
+    background-color: #ccc;
+    border-radius: 6.4px;
+}
+
+.selectBox ol li {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.selectBox ol li.hide {
+    display: none;
+}
+
+.selectBox ol li:not(:last-child) {
+    border-bottom: 1.6px solid #eee;
+}
+
+.selectBox ol li:hover {
+    color: whitesmoke;
+    background-color: #404854;
+}
+
+.selectBox ol li .country-name {
+    margin-left: 6.4px;
+}
+
+.payment {
+    width: 670px;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+}
+
+.payment:before {
+    width: 790px;
+}
+
+#summaryTable{
+    position: absolute;
+    top: 28%;
+    left: 57.5%;
+    width: 580px;
+}
+
+/* Media querries for Samsung galaxy S8+*/
+@media (max-width:361px){
+
+    .homeImage{
+        min-height: 170vh;
+        width: 100%;
+    }
+
+    .container{
+        max-width: 220px;
+        top: 20%;
+        left: 10%;
+    }
+
+    .container .title{
+        font-size: 12pt;
+    }
+
+    .container .title::before{
+        width: 40px;
+    }
+
+    form .userDetails .inputBox{
+        margin-bottom: 15px;
+        width: 320px;
+    } 
+
+    span, .selectBox{
+        font-size: 10pt;
+    }
+
+    .payment {
+        top: 64%;
+        left: 5%;
+        width: 280px;
+    }
+
+    #summaryTable{
+        top: 70%;
+        left: 10%;
+        width: 280px;
+    }
+}
+
+/* Media querries for Iphone XR*/
+@media (max-width:415px) and (min-width:362px){
+    .homeImage{
+        min-height: 140vh;
+        width: 100%;
+    }
+
+    .container{
+        max-width: 270px;
+        top: 18%;
+        left: 10%;
+    }
+
+    .container .title{
+        font-size: 13pt;
+    }
+
+    .container .title::before{
+        width: 40px;
+    }
+
+    form .userDetails .inputBox{
+        margin-bottom: 15px;
+        width: 320px;
+    } 
+
+    span, .selectBox{
+        font-size: 11pt;
+    }
+
+    .payment {
+        top: 62.5%;
+        left: 5%;
+        width: 335px;
+    }
+
+    #summaryTable{
+        top: 69%;
+        left: 10%;
+        width: 335px;
+    }
+}
+
+/* Media querries for Ipad air*/
+@media (max-width:821px) and (min-width:416px){
+    .homeImage{
+        min-height: 110vh;
+        width: 100%;
+    }
+
+    .container{
+        max-width: 670px;
+        top: 22%;
+        left: 5.5%;
+    }
+
+    .container .title{
+        font-size: 20pt;
+    }
+
+    .container .title::before{
+        width: 40px;
+    }
+
+    form .userDetails .inputBox{
+        margin-bottom: 15px;
+        width: 320px;
+    } 
+
+    span, .selectBox{
+        font-size: 18pt;
+    }
+
+    .payment {
+        top: 53%;
+        left: 3%;
+        width: 730px;
+    }
+
+    #summaryTable{
+        top: 58.5%;
+        left: 6%;
+        width: 735px;
+    }
+}
+
+/* Media querries for Nest Hub*/
+@media (max-width:1025px) and (min-width:822px){
+    .homeImage{
+        min-height: 225vh;
+        width: 100%;
+    }
+
+    .container{
+        max-width: 670px;
+        top: 24%;
+        left: 15%;
+    }
+
+    .container .title{
+        font-size: 20pt;
+    }
+
+    .container .title::before{
+        width: 40px;
+    }
+
+    form .userDetails .inputBox{
+        margin-bottom: 15px;
+        width: 320px;
+    } 
+
+    span, .selectBox{
+        font-size: 18pt;
+    }
+
+    .payment {
+        top: 54%;
+        left: 13%;
+        width: 730px;
+    }
+
+    #summaryTable{
+        top: 60%;
+        left: 14%;
+        width: 735px;
+    }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
